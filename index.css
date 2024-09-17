@@ -1,0 +1,208 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Navigation Bar */
+.nav-container {
+    background-color: #99ccee;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffebcd;
+}
+
+/* Logo and Title */
+.nav-container a {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container span {
+    font-family: "Courier New", monospace;
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+}
+
+/* Header */
+h1 {
+    margin-top: 20px;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: "Courier New", monospace;
+    letter-spacing: 0px;
+    color: #228bd2;
+    text-align: center;
+}
+
+h3 {
+    color: #228bd2;
+}
+
+/* Main Content */
+.numbers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    padding: 0 5%;
+}
+
+.numbers-container img {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    border-radius: 15px;
+    /* border-style: solid;
+    border-width: 5px;
+    border-color: #55679C;
+    object-fit: cover; */
+}
+
+/* Content Sections */
+.p-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.box1, .box2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box1 {
+    flex: 1 1 45%;
+}
+
+.box2 {
+    flex: 1 1 45%;
+}
+
+.steps-title {
+    font-weight: 800;
+    font-size: 35px;
+    color: #228bd2;
+    margin-bottom: 20px;
+}
+
+.steps {
+    font-weight: 600;
+    font-size: 24px;
+    color: #228bd2;
+    margin-top: 20px;
+}
+
+/* Ingredients and Procedure Text */
+.box1, .box2 {
+    color: #769652be;
+    line-height: 1.6;
+}
+
+.box1 hr {
+    border: none;
+    border-top: 2px solid #769652be;
+    margin: 10px 0;
+}
+
+/* Previous and Next Buttons */
+.prev-next {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.prev-next-button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #769652be;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.prev-next-button a:hover {
+    background-color: #5a7d42;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+    .numbers-container img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .p-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1, .box2 {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+    .nav-container {
+        height: auto;
+        padding: 10px 5%;
+    }
+}
